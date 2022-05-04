@@ -7,3 +7,4 @@ insert into Employee_payroll value(2,"vishu",20000,14-05-2021);
 insert into Employee_payroll value(3,"kadam",25000,28-06-2019);
 insert into Employee_payroll value(4,"shanvika",10000,4-01-2016);
 insert into Employee_payroll value(5,"pihu",15000,13-07-2018);
+SELECT * FROM payroll_service.employee_payroll;
