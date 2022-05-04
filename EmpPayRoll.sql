@@ -17,3 +17,14 @@ alter table Employee_payroll add gender char(2) after EmpName;
 
 update Employee_payroll set gender = 'M' where id = 3;
 update Employee_payroll set gender = 'F' where id IN (1,2,4,5);
+select sum(EmpSalary) from Employee_payroll;
+select gender,sum(EmpSalary) from Employee_payroll group by gender;
+
+select gender,avg(EmpSalary) from Employee_payroll group by gender;
+
+select gender,max(EmpSalary) from Employee_payroll group by gender;
+
+select gender,min(EmpSalary) from Employee_payroll group by gender;
+
+select gender,count(*) from Employee_payroll group by gender;
+
