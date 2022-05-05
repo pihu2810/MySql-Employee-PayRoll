@@ -38,3 +38,9 @@ alter table Employee_payroll add deductions double not null after basic_pay;
 alter table Employee_payroll add taxable_pay double not null after deductions;
 alter table Employee_payroll add tax double not null after taxable_pay;
 alter table Employee_payroll add net_pay double not null after tax;
+insert into Employee_payroll 
+       (id,EmpName,phone_number,address,department,gender,basic_pay,deductions,taxable_pay,tax,net_pay,EmpstartDate)
+values(8,'Terissa','9888888888','hyd','Sales','F',4800000,100000,40000,5400,4000000,'23-08-2021');
+insert into Employee_payroll 
+       (id,EmpName,phone_number,address,department,gender,basic_pay,deductions,taxable_pay,tax,net_pay,EmpstartDate)
+values(9,'Terissa','9888888888','pune','Marketing','F',4800000,100000,40000,5400,4000000,'23-08-2021');
