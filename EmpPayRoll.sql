@@ -33,3 +33,8 @@ alter table Employee_payroll add department varchar(100) not null after address;
 alter table Employee_payroll alter address set default 'TBD';
 insert into Employee_payroll (id,EmpName,department,EmpSalary,EmpStartDate,gender) 
 values(7,'Kunal','CSE', 49000, '13-08-20014','M');
+alter table Employee_payroll rename column EmpSalary to basic_pay;
+alter table Employee_payroll add deductions double not null after basic_pay;
+alter table Employee_payroll add taxable_pay double not null after deductions;
+alter table Employee_payroll add tax double not null after taxable_pay;
+alter table Employee_payroll add net_pay double not null after tax;
